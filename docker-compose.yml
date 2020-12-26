@@ -12,7 +12,6 @@ services:
       - 55550-55580:55550-55580/udp
     volumes:
       - ./hblink.cfg:/opt/hblink3/hblink.cfg:ro
-      - ./HB_Bridge.cfg:/opt/hblink3/HB_Bridge.cfg:ro
       - ./rules.py:/opt/hblink3/rules.py
     networks:
       hblink:
