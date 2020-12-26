@@ -22,6 +22,10 @@ $ docker-compose up -d
 - `./hblink.cfg:/opt/hblink3/hblink.cfg` Configuration général
 - `./rules.py:/opt/hblink3/rules.py` Règles de routage des masters
 - `./config.py:/opt/HBmonitor/config.py` Configuration de HBmonitor
+## Attribution des ports
+- `55550-55580:55550-55580/udp` Active la plage du port 5550 à 55580 (par exemple)
+- `8080:8080` Port HTTP pour HBmonitor
+- `9000:9000` Websocket HBmonitor
 ## Log HBlink (500 dernières lignes)
 ```console
 $ docker-compose logs -f --tail=500 hblink 
